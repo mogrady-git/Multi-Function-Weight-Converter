@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Function Weight Converter</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <a class="navbar-brand navbar-boss" href="index.html"><i class="fas fa-calculator" style="color: #18d26e ;"></i>&nbsp; Multi Function Weight Converter</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: center;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Multi Function Weight Converter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pounds.html">Pounds Weight Converter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Main Body Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-lg-6 col-md-8 col-sm-10 mx-auto">
+                    <h1 class="display-4 text-center mb-5">Multi Function Weight Converter</h1>
+                    <!-- Input Area -->
+                    <form action="">
+                        <div class="input-group">
+                            <input id="weight" type="number" min="0" class="form-control" placeholder="Enter Weight">
+
+                            <div class="input-group-append">
+                                <select name="inputType" id="inputType" class="custom-select">
+                                <option value="kilograms" selected>Kilograms</option>
+                                <option value="grams">Grams</option>
+                                <option value="pounds">Pounds</option>
+                                <option value="ounces">Ounces</option>
+                            </select>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Output Area -->
+                    <div class="output mt-4" style="visibility: hidden">
+
+                        <!-- Gram Output Card -->
+                        <div class="card p-3 my-2 bg-primary text-white">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="display-5" id="firstOutputName"></div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="float-right" id="firstOutputValue"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pounds Output Card -->
+                        <div class="card p-3 my-2 bg-success">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="display-5" id="secondOutputName"></div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="float-right" id="secondOutputValue"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ounces Output Card -->
+                        <div class="card p-3 my-2 bg-danger text-white">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="display-5" id="thirdOutputName"></div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="float-right" id="thirdOutputValue"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
